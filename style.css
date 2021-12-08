@@ -1,0 +1,98 @@
+#icona{
+	position: relative;
+	left: 600px;
+}
+.msq-image{
+display: flex;
+flex-direction: row;
+}
+.korzina{
+	position: absolute;
+	right: 70px;
+	top:10px;
+}
+.option{
+	position: absolute;
+	left: 70px;
+	top:10px;
+}
+.msq-image{
+	
+	display: flex;
+	justify-content: space-between;
+}
+.registration{
+	position: absolute;
+	right: 50px;
+	top:50px;
+}
+.form{
+	width: 180px;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0 4px 16px #ccc;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+
+}
+.form_input,
+.form_button{
+	font-family: sans-serif;
+	letter-spacing: 1px;
+    font-size: 16px;
+
+}
+.form_title{
+	text-align: center;
+	margin: 0 0 25px 0;
+	font-weight: normal;	
+	font-size: 22px;
+}
+.form_group{
+	position: relative;
+	margin-bottom: 20px;
+}
+.form_label{
+	position: absolute;
+	top: 0;
+	left: 1px;
+	z-index: -1;
+	color:#9e9e9e;
+	transition: 0.3s;
+	font-size: 16px;
+
+
+}
+.form_input{
+	width: 100%;
+	padding:0 0 8px 0;
+	border:none;
+	border-bottom: 1px solid #e0e0e0;
+	background: transparent;
+	outline: none;
+	transition: 0.3s;
+}
+.form_input:focus{
+	border-bottom: 1px solid#1a73a8;	
+}
+
+.form_button{
+	padding: 4px 14px;
+	border:none;
+	border-radius: 5px;
+	color:#fff;
+	background-color: black;
+	outline: none;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.form_button:focus,
+.form_button:hover{
+	background-color: orange;
+}
+.form_input:focus ~ .form_label,
+.form_input:not(:placeholder-shown) ~ .form_label{
+	top:-18px;
+	color:#e0e0e0;
+	font-size: 10px;
+}
